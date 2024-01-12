@@ -1,0 +1,9 @@
+[Heading 1] Sarah's INFT 1206 Home Page
+
+[Student ID picture]
+
+Hi, and welcome to my simple home page. This page is intended to be a top-level hub to link to my work in the INFT 1206: Web Development - Fundamentals course for the Winter 2024 term at Durham College.
+
+Introduction
+
+My name is Sarah, and I use she/her pronouns. I am in my forties and I'm in my second term of the Computer Programming and Analysis program at Durham College.
