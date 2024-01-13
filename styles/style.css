@@ -1,0 +1,88 @@
+/* 
+ * Name: Sarah Poulsen File: style.css 
+ * Date: 13 September 2024
+ * This is the style sheet for my homepage.
+ */
+
+html {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+
+    background-color: #7D3780;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #4A2C40;
+    padding: 0 20px 20px 20px;
+    border: 5px solid whitesmoke;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    color: #E9BD43;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px black;
+}
+
+h2 {
+    font-size: 32;
+}
+
+h3 {
+    font-size: 24;
+}
+
+h4 {
+    font-size: 20;
+}
+
+h5 {
+    font-size: 16;
+}
+
+p,
+li {
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    color: white
+}
+
+a:link {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFC0CB;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00BFFF;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #00BFFF;
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
