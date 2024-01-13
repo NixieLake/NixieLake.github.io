@@ -1,6 +1,6 @@
-[Title] Sarah's INFT 1206 Home Page
+[Title] Sarah's INFT 1206 Homepage
 
-[Heading 1] Sarah's INFT 1206 Home Page
+[Heading 1] Sarah's INFT 1206 Homepage
 
 [Student ID picture]
 
