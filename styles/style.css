@@ -86,3 +86,7 @@ img {
     display: block;
     margin: 0 auto;
 }
+
+code {
+    color: #5f8f5f;
+}
