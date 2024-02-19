@@ -16,6 +16,11 @@ div {
     height: 200px;
     line-height: 200px;
     margin: auto;
+    border-radius: 10%;
+    border: 1px solid darkred;
+    background-color: red;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5rem;  /* base font-size 12px * 1.5 = 18px */
+    color: white;
+    text-shadow: 2px 2px black;
 }
