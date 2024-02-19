@@ -1,0 +1,32 @@
+/*
+  * Name: Sarah Poulsen
+  * File: style.css
+  * Date: 26 February 2024
+  * For INFT 1206-02: Web Development - Fundamentals, Assignment 3, part 2 - A cool-looking box.
+  */
+
+html {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/* Your CSS below here */
+div {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    margin: auto;
+    border-radius: 10%;
+    border: 1px solid darkred;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%);
+    background-color: red;
+    box-shadow:
+        inset 5px 5px 5px 0px rgba(255, 255, 255, 0.50),
+        inset -5px -5px 5px 0px rgba(0, 0, 0, 0.50),
+        5px 5px 5px 0px #000000;
+    
+    text-align: center;
+    font-size: 1.5rem;  /* base font-size 12px * 1.5 = 18px */
+    color: white;
+    text-shadow: 2px 2px black;
+}
