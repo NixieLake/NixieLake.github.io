@@ -20,6 +20,10 @@ div {
     border: 1px solid darkred;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%);
     background-color: red;
+    box-shadow:
+        inset 5px 5px 5px 0px rgba(255, 255, 255, 0.50),
+        inset -5px -5px 5px 0px rgba(0, 0, 0, 0.50),
+        5px 5px 5px 0px #000000;
     
     text-align: center;
     font-size: 1.5rem;  /* base font-size 12px * 1.5 = 18px */
