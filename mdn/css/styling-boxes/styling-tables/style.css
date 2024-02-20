@@ -70,3 +70,21 @@ tfoot td {
     background: linear-gradient(to bottom, rgb(0 0 0 / 10%), rgb(0 0 0 / 50%));
     border: 3px solid purple;
 }
+
+/* zebra striping */
+
+tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e495e4;
+}
+
+tbody tr {
+    background-image: url(noise.png);
+}
+
+table {
+    background-color: #ff33cc;
+}
