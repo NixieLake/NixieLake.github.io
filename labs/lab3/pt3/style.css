@@ -171,3 +171,11 @@ ol {
   letter-spacing: 1px;
   word-spacing: 2px;
 }
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
