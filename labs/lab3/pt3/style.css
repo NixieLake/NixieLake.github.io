@@ -5,8 +5,26 @@
  * For INFT 1206-02: Web Development - Fundamentals, Assignment 3, part 3 - Typesetting a community
  * school homepage.
  */
- 
- /* General setup */
+
+/* Custom fonts */
+
+@font-face {
+  font-family: 'gandhi_sansregular';
+  src: url('fonts/gandhisans-regular-webfont.woff2') format('woff2'),
+    url('fonts/gandhisans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'baskervvilleregular';
+  src: url('fonts/baskervville-regular-webfont.woff2') format('woff2'),
+    url('fonts/baskervville-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General setup */
 
 * {
   box-sizing: border-box;
@@ -51,3 +69,14 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+/* Fonts */
+
+html {
+  font-family: baskervvilleregular, Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,
+h2 {
+  font-family: gandhi_sansregular, Verdana, Geneva, Tahoma, sans-serif;
+}
