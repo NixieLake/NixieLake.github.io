@@ -111,5 +111,40 @@ h2 {
 }
 
 section h2+p {
-  text-indent: 20px;
+  text-indent: 2rem;
+}
+
+/* Links */
+
+a {
+  text-decoration: underline;
+}
+
+a:link {
+  color: #a66;
+}
+
+a:visited {
+  color: #800;
+}
+
+a:focus {
+  color: #f00;
+  text-decoration: none;
+  outline-color: transparent;
+}
+
+a:hover {
+  color: #faa;
+  text-decoration: none;
+}
+
+a:active {
+  color: #c99;
+}
+
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0.2em;
+  background-size: 1em 1em;
+  padding-right: 1.2em;
 }
