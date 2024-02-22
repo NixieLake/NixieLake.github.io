@@ -80,3 +80,36 @@ h1,
 h2 {
   font-family: gandhi_sansregular, Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* General text styling */
+
+html {
+  font-size: 10px;
+}
+
+p,
+ul,
+ol {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+h1,
+h2 {
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+section h2+p {
+  text-indent: 20px;
+}
