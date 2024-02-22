@@ -10,6 +10,7 @@ h1 {
         1px 1px 1px red,
         2px 2px 1px red;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 h1 + p {
@@ -21,4 +22,10 @@ p {
     color: red;
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+p::first-line {
+    letter-spacing: 4px;
+    word-spacing: 4px;
 }
