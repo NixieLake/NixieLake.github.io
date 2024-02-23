@@ -113,12 +113,14 @@ h2 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
+  text-shadow: 2px 2px 2px #a66;
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
+  text-shadow: 1px 1px 1px #a66;
 }
 
 section h2+p {
@@ -173,9 +175,38 @@ ol {
 }
 
 ul {
-  list-style-type: square;
+  list-style: square;
 }
 
 ol {
-  list-style-type: lower-alpha;
+  list-style: lower-alpha;
+}
+
+/* Navigation menu */
+
+nav ul {
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+nav li {
+  list-style: none;
+  margin-bottom: 1.6rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  outline: 1px solid #a66;
+  border-radius: 0.3em;
+  line-height: 3;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1em 2em;
+  text-shadow: 1px 1px 1px #a66;
+}
+
+nav li a:focus {
+  outline: 1px solid #a66;
 }
