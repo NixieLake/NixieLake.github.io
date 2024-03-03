@@ -8,7 +8,8 @@
 
 /* || General setup */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -26,12 +27,16 @@ body {
 
 /* || typography */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Cinzel Decorative', cursive;
   color: #2a2a2a;
 }
 
-p, input, li {
+p,
+input,
+li {
   font-family: 'Roboto Condensed', sans-serif;
   color: #2a2a2a;
 }
@@ -51,7 +56,8 @@ h3 {
   font-size: 2.2rem;
 }
 
-p, li {
+p,
+li {
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -64,13 +70,19 @@ header {
   flex-flow: row wrap;
 }
 
-body > * {
+body>* {
   background-color: red;
   padding: 1%;
 }
 
-main, header, nav, article, aside, footer, section {
-  background-color: rgba(0,255,0,0.5);
+main,
+header,
+nav,
+article,
+aside,
+footer,
+section {
+  background-color: rgba(0, 255, 0, 0.5);
   padding: 1%;
 }
 
@@ -104,7 +116,8 @@ nav li {
   flex: 1;
 }
 
-nav a, nav span {
+nav a,
+nav span {
   display: inline-block;
   font-size: 2rem;
   height: 3rem;
@@ -121,7 +134,8 @@ main {
   display: flex;
 }
 
-article, section {
+article,
+section {
   flex: 4;
 }
 

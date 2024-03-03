@@ -39,13 +39,18 @@ footer {
   clear: both;
 }
 
-header, section, aside, nav, footer {
+header,
+section,
+aside,
+nav,
+footer {
   padding: 20px;
 }
 
 /* header and footer */
 
-header, footer {
+header,
+footer {
   border-top: 5px solid #a66;
   border-bottom: 5px solid #a66;
 }
