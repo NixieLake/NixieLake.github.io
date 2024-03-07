@@ -1,31 +1,31 @@
 /* fonts */
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 h1 {
-    font-size: 5rem;
-    text-transform: capitalize;
-    text-shadow: 
-        1px 1px 1px red,
-        2px 2px 1px red;
-    text-align: center;
-    letter-spacing: 2px;
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-shadow:
+    1px 1px 1px red,
+    2px 2px 1px red;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
-h1 + p {
-    font-weight: bold;
+h1+p {
+  font-weight: bold;
 }
 
 p {
-    font-size: 1.5rem;
-    color: red;
-    font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: red;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 1px;
 }
 
 p::first-line {
-    letter-spacing: 4px;
-    word-spacing: 4px;
+  letter-spacing: 4px;
+  word-spacing: 4px;
 }

@@ -1,0 +1,217 @@
+/*
+ * Name: Sarah Poulsen
+ * File: styles.css
+ * Date: 26 February 2024
+ * For INFT 1206-02: Web Development - Fundamentals, Assignment 3, part 3 - Typesetting a community
+ * school homepage.
+ */
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* Custom fonts */
+
+/*
+Gandhi Sans font obtained from fontspring.com,
+originally created by Librerias Gandhi S.A. de C.V.
+See https: //www.fontsquirrel.com/fonts/gandhi-sans
+
+Baskervville font obtained from fontsquirrel.com,
+originally created by ANRT
+Copyright 2018 Baskerwille project authors (anrttype1985@gmail.com)
+This Font Software is licensed under the SIL Open Font License,
+Version 1.1. available with a FAQ at: http: //scripts.sil.org/OFL
+See https: //www.fontsquirrel.com/fonts/baskervville
+*/
+
+@font-face {
+  font-family: 'gandhi_sansregular';
+  src: url('fonts/gandhisans-regular-webfont.woff2') format('woff2'),
+    url('fonts/gandhisans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'baskervvilleregular';
+  src: url('fonts/baskervville-regular-webfont.woff2') format('woff2'),
+    url('fonts/baskervville-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Fonts */
+
+html {
+  font-family: baskervvilleregular, Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,
+h2 {
+  font-family: gandhi_sansregular, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* General text styling */
+
+html {
+  font-size: 10px;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+h1,
+h2 {
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px #a66;
+}
+
+h2 {
+  font-size: 3.2rem;
+  text-shadow: 1px 1px 1px #a66;
+}
+
+section h2+p {
+  text-indent: 2rem;
+}
+
+/* Links */
+
+a {
+  text-decoration: underline;
+}
+
+a:link {
+  color: #a66;
+}
+
+a:visited {
+  color: #800;
+}
+
+a:focus {
+  color: #f00;
+  text-decoration: none;
+  outline-color: transparent;
+}
+
+a:hover {
+  color: #faa;
+  text-decoration: none;
+}
+
+a:active {
+  color: #fff;
+  background-color: #c99;
+  border-radius: 0.3em;
+}
+
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0.2em;
+  background-size: 1em 1em;
+  padding-right: 1.2em;
+}
+
+/* Lists */
+
+ul,
+ol {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+ul {
+  list-style: square;
+}
+
+ol {
+  list-style: lower-alpha;
+}
+
+/* Navigation menu */
+
+nav ul {
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+nav li {
+  list-style: none;
+  margin-bottom: 1.6rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  outline: 1px solid #a66;
+  border-radius: 0.3em;
+  line-height: 3;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1em 2em;
+  text-shadow: 1px 1px 1px #a66;
+}
+
+nav li a:focus {
+  outline: 1px solid #a66;
+}
