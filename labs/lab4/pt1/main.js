@@ -55,6 +55,8 @@ function result() {
 
   }
 
+  const newStory = storyText;
+
   story.textContent = ;
   story.style.visibility = 'visible';
 }
