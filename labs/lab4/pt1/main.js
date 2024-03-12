@@ -18,7 +18,7 @@ function randomValueFromArray(array) {
 
 // 2. RAW TEXT STRINGS
 
-const storyText = "It was 94 fahrenheit outside, so : insertx: went for a walk.When they got to: inserty:, they stared in horror for a few moments, then : insertz:.Bob saw the whole thing, but was not surprised — : insertx: weighs 300 pounds, and it was a hot day.";
+const storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
 
 const insertX = [
   "Willy the Goblin",
@@ -53,9 +53,9 @@ function result() {
   const zItem = randomValueFromArray(insertZ);
 
   // Insert each item into the story at the appropriate place.
-  newStory = newStory.replace(":insertX:", xItem);
-  newStory = newStory.replace(":insertY:", yItem);
-  newStory = newStory.replace(":insertZ:", zItem);
+  newStory = newStory.replaceAll(":insertx:", xItem);
+  newStory = newStory.replaceAll(":inserty:", yItem);
+  newStory = newStory.replaceAll(":insertz:", zItem);
 
   // Replace Bob with a custom name if one is entered.
   if (customName.value !== '') {
@@ -67,10 +67,11 @@ function result() {
   if (document.getElementById("uk").checked) {
     const weight = `${Math.round(300 / 14)} stone`;
     const temperature = `${Math.round((94 - 32) * 5 / 9)} centigrade`;
-    newStory = newStory.replace("94 Fahrenheit", temperature);
+    newStory = newStory.replace("94 fahrenheit", temperature);
     newStory = newStory.replace("300 pounds", weight);
   }
 
-  story.textContent = ;
+  // Add the new story to the page.
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
