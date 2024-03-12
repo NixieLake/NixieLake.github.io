@@ -63,10 +63,12 @@ function result() {
     newStory = newStory.replace("Bob", name);
   }
 
+  // Convert weight and temperature values to metric if UK is selected.
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature = Math.round(94);
-
+    const weight = `${Math.round(300 / 14)} stone`;
+    const temperature = `${Math.round((94 - 32) * 5 / 9)} centigrade`;
+    newStory = newStory.replace("94 Fahrenheit", temperature);
+    newStory = newStory.replace("300 pounds", weight);
   }
 
   story.textContent = ;
