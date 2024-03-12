@@ -57,9 +57,10 @@ function result() {
   newStory = newStory.replace(":insertY:", yItem);
   newStory = newStory.replace(":insertZ:", zItem);
 
+  // Replace Bob with a custom name if one is entered.
   if (customName.value !== '') {
     const name = customName.value;
-
+    newStory = newStory.replace("Bob", name);
   }
 
   if (document.getElementById("uk").checked) {
