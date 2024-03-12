@@ -44,6 +44,19 @@ randomize.addEventListener('click', result);
 
 function result() {
 
+  // Add variable for the new story.
+  let newStory = storyText;
+
+  // Select items to insert into the story.
+  const xItem = randomValueFromArray(insertX);
+  const yItem = randomValueFromArray(insertY);
+  const zItem = randomValueFromArray(insertZ);
+
+  // Insert each item into the story at the appropriate place.
+  newStory = newStory.replace(":insertX:", xItem);
+  newStory = newStory.replace(":insertY:", yItem);
+  newStory = newStory.replace(":insertZ:", zItem);
+
   if (customName.value !== '') {
     const name = customName.value;
 
@@ -54,11 +67,6 @@ function result() {
     const temperature = Math.round(94);
 
   }
-
-  const newStory = storyText;
-  const xItem = randomValueFromArray(insertX);
-  const yItem = randomValueFromArray(insertY);
-  const zItem = randomValueFromArray(insertZ);
 
   story.textContent = ;
   story.style.visibility = 'visible';
