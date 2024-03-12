@@ -56,6 +56,9 @@ function result() {
   }
 
   const newStory = storyText;
+  const xItem = randomValueFromArray(insertX);
+  const yItem = randomValueFromArray(insertY);
+  const zItem = randomValueFromArray(insertZ);
 
   story.textContent = ;
   story.style.visibility = 'visible';
