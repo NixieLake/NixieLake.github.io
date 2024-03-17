@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>OOJS: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    class Shape {
+
+        name;
+        sides;
+        sideLength;
+
+        constructor(name, sides, sideLength) {
+          this.name = name;
+          this.sides = sides;
+          this.sideLength = sideLength;
+        }
+
+        calcPerimeter() {
+          console.log(`${this.sides * this.sideLength}`);
+        }
+
+      }
+
+      class Square extends Shape {
+
+        constructor(sideLength) {
+          super('square', 4, sideLength);
+        }
+
+        calcArea() {
+          console.log(`The area of this ${this.name} is ${this.sideLength * this.sideLength}`);
+        }
+
+      }
+
+      const square = new Square(4);
+      square.calcPerimeter();
+      square.calcArea();
+    
+  </script>
+
+</html>
