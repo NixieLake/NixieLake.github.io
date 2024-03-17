@@ -2,8 +2,7 @@
  * Name: Sarah Poulsen
  * File: main.js
  * Date: 5 April 2024
- * For INFT 1206-02: Web Development - Fundamentals, Assignment 4, part 3 - Adding features to our
- * bouncing ball demo
+ * For INFT 1206-02: Web Development - Fundamentals, Assignment 4, part 3 - Object building practice
  */
 
 // setup canvas
