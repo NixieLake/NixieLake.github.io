@@ -45,4 +45,63 @@ class Ball {
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
   }
+
+  update() {
+    if ((this.x + this.size) >= width) {
+      this.velX = -(this.velX);
+    }
+
+    if ((this.x - this.size) <= 0) {
+      this.velX = -(this.velX);
+    }
+
+    if ((this.y + this.size) >= height) {
+      this.velY = -(this.velY);
+    }
+
+    if ((this.y - this.size) <= 0) {
+      this.velY = -(this.velY);
+    }
+
+    this.x += this.velX;
+    this.y += this.velY;
+  }
 }
+
+// create the balls
+
+const balls = [];
+
+while (balls.length < 25) {
+  const size = random(10, 20);
+  const ball = new Ball(
+    // ball position always drawn at least one ball width
+    // away from the edge of the canvas, to avoid drawing errors
+    random(0 + size, width - size),
+    random(0 + size, height - size),
+    random(-7, 7),
+    random(-7, 7),
+    randomRGB(),
+    size,
+  );
+
+  balls.push(ball);
+}
+
+// draw loop
+
+function loop() {
+  ctx.fillStyle = "rgb(0 0 0 / 25%)";
+  ctx.fillRect(0, 0, width, height);
+
+  for (const ball of balls) {
+    ball.draw();
+    ball.update();
+  }
+
+  requestAnimationFrame(loop);
+}
+
+// run the program
+
+loop();
