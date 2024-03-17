@@ -188,7 +188,7 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
-  
+
   // update score
   ballsRemaining++;
   para.textContent = `Ball count: ${ballsRemaining}`;
