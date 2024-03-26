@@ -27,7 +27,7 @@ const altText = {
   'images/pic3.jpg': 'Purple and white pansies',
   'images/pic4.jpg': 'Section of wall from a pharoah\'s tomb',
   'images/pic5.jpg': 'Large moth on a leaf'
-}
+};
 
 /* Looping through images */
 for (const image of images) {
@@ -52,4 +52,4 @@ btn.onclick = () => {
     btn.textContent = 'Darken';
     overlay.style.backgroundColor = 'rgb(0 0 0 / 0%)';
   }
-}
+};
