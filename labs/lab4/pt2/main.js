@@ -30,7 +30,7 @@ const altText = {
 }
 
 /* Looping through images */
-for (image of images) {
+for (const image of images) {
   const newImage = document.createElement('img');
   newImage.setAttribute('src', image);
   newImage.setAttribute('alt', altText[image]);
