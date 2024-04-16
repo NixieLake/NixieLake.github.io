@@ -59,7 +59,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: white;
 }
 
 article, footer, .secondary {
@@ -72,7 +72,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: ff80ff;
+  /* background-color: #ff80ff; */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
