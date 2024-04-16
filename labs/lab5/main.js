@@ -1,3 +1,10 @@
+/*
+ * Name: Sarah Poulsen
+ * File: main.js
+ * Date: 16 April 2024
+ * For INFT 1206-02: Web Development - Fundamentals, Assignment 5 - Accessibility troubleshooting
+ */
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
