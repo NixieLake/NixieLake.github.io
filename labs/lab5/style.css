@@ -59,6 +59,8 @@ p, li, table {
 /* || header layout */
 
 nav, article, footer, .secondary {
+  /* Previous background colour was green (#008000) with foreground #2A2A2A. Contrast was 2.79:1 which failed the contrast test.
+  The new background colour of white (#FFFFFF) and forground #2A2A2A has a contrast of 14.35:1, which passed. */
   background-color: white;
 }
 
